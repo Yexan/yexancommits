@@ -14,4 +14,4 @@ timeout() {
 
 }
 
-timeout 5000 './handlenewcontent'
+timeout 5000 './handlenewcontent.sh'
