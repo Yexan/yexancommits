@@ -14,6 +14,6 @@ timeout() {
 
 }
 
-echo "$(pwd)/${0%/*}"
+echo 'Commit hook passed'
 
-timeout 5000 "cd $(pwd)/${0%/*}  && ./handlenewcontent.sh"
+timeout 5000 "cd ${0%/*} && ./handlenewcontent.sh"
