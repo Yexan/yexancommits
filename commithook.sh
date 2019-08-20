@@ -14,4 +14,12 @@ timeout() {
 
 }
 
-timeout 5000 './handlenewcontent.sh'
+function handle_new_content {
+  git add --all
+  git commit -m 'Add new gifs'
+  git push
+}
+
+export -f handle_new_content
+
+timeout 5000 "handle_new_content"
