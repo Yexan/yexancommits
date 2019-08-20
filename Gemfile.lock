@@ -1,0 +1,20 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
+    execjs (2.7.0)
+    jekyll-coffeescript (1.2.2)
+      coffee-script (~> 2.2)
+      coffee-script-source (~> 1.12)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jekyll-coffeescript
+
+BUNDLED WITH
+   1.17.1
