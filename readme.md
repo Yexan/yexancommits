@@ -1,5 +1,6 @@
 # Here will be add generated lolcommits gifs
 
-{% for img in site.static_files %}
+{% assign image_files = site.static_files | where: "image", true %}
+{% for img in image_files %}
 <img src="{{ site.baseurl }}{{ img.path }}">
 {% endfor %}
