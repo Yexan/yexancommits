@@ -4,6 +4,7 @@
 document.addEventListener 'DOMContentLoaded', ->
   lazyImages = [].slice.call(document.querySelectorAll('img.lazy'))
   active = false
+  console.log lazyImages
 
   lazyLoad = ->
     if active == false
@@ -12,7 +13,7 @@ document.addEventListener 'DOMContentLoaded', ->
         lazyImages.forEach (lazyImage) ->
           if lazyImage.getBoundingClientRect().top <= window.innerHeight and lazyImage.getBoundingClientRect().bottom >= 0 and getComputedStyle(lazyImage).display != 'none'
             lazyImage.src = lazyImage.dataset.src
-            lazyImage.srcset = lazyImage.dataset.srcset
+            # lazyImage.srcset = lazyImage.dataset.srcset
             lazyImage.classList.remove 'lazy'
             lazyImages = lazyImages.filter((image) ->
               image != lazyImage
