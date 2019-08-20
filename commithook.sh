@@ -14,4 +14,6 @@ timeout() {
 
 }
 
-timeout 5000 "./handlenewcontent.sh"
+echo "$(pwd)/${0%/*}"
+
+timeout 5000 "cd $(pwd)/${0%/*}  && ./handlenewcontent.sh"
