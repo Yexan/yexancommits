@@ -16,6 +16,8 @@ timeout() {
 
 echo 'Commit hook passed'
 
+# Wait 5 seconds to be sure that the gif is generated and moved in folder
 sleep 5
 
-timeout 5 "cd ${0%/*} && ./handlenewcontent.sh"
+# Now commit and push changes
+timeout 15 "cd ${0%/*} && ./handlenewcontent.sh"
