@@ -16,6 +16,6 @@ timeout() {
 
 echo 'Commit hook passed'
 
-sleep 10
+sleep 5
 
-cd ${0%/*} && ./handlenewcontent.sh
+cd "${0%/*}" && ./handlenewcontent.sh
