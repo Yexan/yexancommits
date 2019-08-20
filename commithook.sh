@@ -18,4 +18,4 @@ echo 'Commit hook passed'
 
 sleep 5
 
-cd "${0%/*}" && ./handlenewcontent.sh
+timeout 5 "cd ${0%/*} && ./handlenewcontent.sh"
