@@ -7,4 +7,4 @@
 {% endfor %}
 </section>
 
-<script src="/load-images.js"></script>
+<script src="{{ site.baseurl }}/load-images.js"></script>
