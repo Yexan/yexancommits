@@ -15,3 +15,5 @@ title: Home
   {% assign image_files = site.static_files | where: "image", true | sort: 'date'%}
   <img class="lazy" src="{{ site.baseurl }}/loader.gif" data-src="{{ site.baseurl }}{{ image_files.last.path }}" width="640" height="480" style="margin: 10px auto;">
 </section>
+
+<script src="{{ site.baseurl }}/load-images.js"></script>
