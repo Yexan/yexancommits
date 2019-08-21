@@ -4,7 +4,7 @@
 
 In a git folder enable lolcommits
 
-````
+```
 lolcommits --capture --animate 2 --fork
 ```
 
