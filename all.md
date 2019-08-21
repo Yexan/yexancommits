@@ -1,1 +1,1 @@
-{% include gallery.html projectname="images" %}
+{% include gallery.html projectname="image" %}
