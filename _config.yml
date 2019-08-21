@@ -9,13 +9,15 @@ collections:
     title: Uploads
     output: true
 defaults:
-- scope:
-    path: img
-  values:
-    image: true
-- scope:
-    path: img/lolcomtest
-  values:
-    lolcomtest: true
+  -
+    scope:
+      path: "img"
+    values:
+      image: true
+  -
+    scope:
+      path: "img/lolcomtest"
+    values:
+      lolcomtest: true
 plugins:
 - jekyll-coffeescript
