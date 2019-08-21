@@ -1,1 +1,1 @@
-{% include _layouts/gallery.md projectname="lolcomtest" %}
+{% include gallery.html projectname="lolcomtest" %}
