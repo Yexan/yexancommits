@@ -4,11 +4,14 @@ title: Home
 
 <h1>{{ page.title }}</h1>
 
-<section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center;">
-{% assign image_files = site.static_files | where: "image", true | sort: 'date' %}
-{% for img in image_files reversed %}
-<img class="lazy" src="{{ site.baseurl }}/loader.gif" data-src="{{ site.baseurl }}{{ img.path }}" width="300" height="225" style="margin: 5px;">
-{% endfor %}
-</section>
+<nav>
+  <li><a href="{{ site.baseurl }}">Home</a></li>
+  <li><a href="{{ site.baseurl }}/lolcomtest.html">Lolcomtest</a></li>
+  <li><a href="{{ site.baseurl }}/all.html">All commits</a></li>
+</nav>
 
-<script src="{{ site.baseurl }}/load-images.js"></script>
+<section>
+  <h2>Last Commit</h2>
+  {% assign image_files = site.static_files | where: "image", true | sort: 'date'%}
+  <img class="lazy" src="{{ site.baseurl }}/loader.gif" data-src="{{ site.baseurl }}{{ image_files.last.path }}" width="640" height="480" style="margin: 10px auto;">
+</section>
