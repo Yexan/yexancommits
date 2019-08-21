@@ -24,5 +24,10 @@ defaults:
       path: "img/www.rosemood.fr"
     values:
       rosemood: true
+  -
+    scope:
+      path: "img/sauws.best"
+    values:
+      sauws: true
 plugins:
 - jekyll-coffeescript
