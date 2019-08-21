@@ -19,5 +19,10 @@ defaults:
       path: "img/lolcomtest"
     values:
       lolcomtest: true
+  -
+    scope:
+      path: "img/www.rosemood.fr"
+    values:
+      rosemood: true
 plugins:
 - jekyll-coffeescript

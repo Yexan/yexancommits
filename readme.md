@@ -5,7 +5,7 @@
 In a git folder enable lolcommits
 
 ```
-lolcommits --capture --animate 2 --fork
+lolcommits --enable --animate 2 --fork
 ```
 
 Then edit the lolcommit hook to look like :
