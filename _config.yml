@@ -29,5 +29,10 @@ defaults:
       path: "img/sauws.best"
     values:
       sauws: true
+  -
+    scope:
+      path: "marie"
+    values:
+      marie: true
 plugins:
 - jekyll-coffeescript
