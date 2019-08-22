@@ -16,7 +16,7 @@ title: Home
 <section>
   <h2>Last Commit</h2>
   {% assign image_files = site.static_files | where: "image", true | date_sort | reverse %}
-  <img class="lazy" src="{{ site.baseurl }}/loader.gif" data-src="{{ site.baseurl }}{{ image_files.first.path }}" width="640" height="480" style="margin: 10px auto;">
+  <img class="lazy" src="{{ site.baseurl }}/loader.gif" data-src="{{ site.baseurl }}{{ image_files.first.path }}" width="640" height="480" style="margin: 10px auto; max-width: 100%; height: auto;">
 </section>
 
 <script src="{{ site.baseurl }}/load-images.js"></script>
